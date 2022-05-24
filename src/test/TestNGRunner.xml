@@ -1,4 +1,4 @@
-<suite name = "suite1" verbose = "1" parallel = "classes">
+<suite thread-count="2" name = "Security" verbose = "1" parallel = "classes">
     <test name = "Security">
         <classes>
             <class name = "APITests.Users.Signup"/>
