@@ -6,4 +6,10 @@
             <class name = "APITests.Users.UserData"/>
         </classes>
     </test>
+
+    <test name = "Posting">
+        <classes>
+            <class name = "APITests.Posts.Posting"/>
+        </classes>
+    </test>
 </suite>
