@@ -2,10 +2,9 @@
 
 Project to test Skillo API: http://training.skillo-bg.com:3100/api/
 
-Uses: 
+Uses:   
 Java Faker: Random Data Generator 
-https://mvnrepository.com/artifact/com.github.javafaker/javafaker
-
+https://mvnrepository.com/artifact/com.github.javafaker/javafaker  
 TestNG 7.5   
 Rest Assured 5.0.1  
 Gson 2.9.0  
