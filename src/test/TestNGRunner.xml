@@ -1,0 +1,8 @@
+<suite name = "suite1" verbose = "1" parallel = "classes">
+    <test name = "Security">
+        <classes>
+            <class name = "APITests.Users.Registration"/>
+            <class name = "APITests.Users.LoginLogout"/>
+        </classes>
+    </test>
+</suite>
