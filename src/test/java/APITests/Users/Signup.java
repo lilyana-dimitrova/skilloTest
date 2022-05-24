@@ -1,7 +1,7 @@
 package APITests.Users;
 
 import DTOs.LoginPOJO;
-import DTOs.SignupPojo;
+import DTOs.SignupPOJO;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jayway.jsonpath.JsonPath;
@@ -23,7 +23,7 @@ public class Signup {
         RestAssured.basePath ="/users";
     }
 
-    static SignupPojo user = new SignupPojo();
+    static SignupPOJO user = new SignupPOJO();
     static LoginPOJO login = new LoginPOJO();
     static String authToken;
     private static final ObjectMapper objectMapper = new ObjectMapper();
