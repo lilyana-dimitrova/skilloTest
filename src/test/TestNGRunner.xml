@@ -1,8 +1,9 @@
-<suite thread-count="2" name = "Security" verbose = "1" parallel = "classes">
-    <test name = "Security">
+<suite thread-count="1" name = "Security" verbose = "1" parallel = "classes">
+    <test name = "Authorization">
         <classes>
             <class name = "APITests.Users.Signup"/>
             <class name = "APITests.Users.LoginLogout"/>
+            <class name = "APITests.Users.UserData"/>
         </classes>
     </test>
 </suite>

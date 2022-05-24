@@ -4,7 +4,7 @@ import com.github.javafaker.Faker;
 
 import java.util.Calendar;
 
-public class SignupPojo {
+public class SignupPOJO {
 
     // Java faker account that creates a fake user in the constructor
 
@@ -15,8 +15,9 @@ public class SignupPojo {
     private String publicInfo;
     private int userID;
     private String profilePicUrl;
+    private boolean isBanned;
 
-    public SignupPojo() {
+    public SignupPOJO() {
         Faker faker = new Faker();
 
         this.username = faker.name().username();
@@ -29,6 +30,7 @@ public class SignupPojo {
         System.out.println(password);
         this.publicInfo = "Fake account";
         System.out.println(publicInfo);
+        isBanned = false;
     }
 
     public String getUsername() {
