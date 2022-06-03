@@ -3,8 +3,9 @@ package DTOs;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class BanPOJO {
+
     @JsonProperty("isBanned")
-    private boolean isBanned;
+    private Boolean isBanned;
     private String description;
 
     public void setBanned(boolean banned) {

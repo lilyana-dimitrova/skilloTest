@@ -12,4 +12,10 @@
             <class name = "APITests.Posts.Posting"/>
         </classes>
     </test>
+
+    <test name = "SeleniumHomePageTest">
+        <classes>
+            <class name = "SeleniumTests.HomePageTesting"/>
+        </classes>
+    </test>
 </suite>
