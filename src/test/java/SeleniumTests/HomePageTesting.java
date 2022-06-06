@@ -1,5 +1,4 @@
 package SeleniumTests;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import org.openqa.selenium.By;
@@ -8,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -27,6 +27,7 @@ public class HomePageTesting {
     @FindBy(id = "nav-link-login")
     private WebElement loginButton;
 
+
     @BeforeClass
     public void setup() {
         RestAssured.baseURI = "http://training.skillo-bg.com";
@@ -35,6 +36,11 @@ public class HomePageTesting {
         WebDriverManager.chromedriver().setup();
         chromeDriver = new ChromeDriver();
         PageFactory.initElements(chromeDriver, this);
+    }
+
+    @AfterClass
+    public void cleanUp(){
+        chromeDriver.quit();
     }
 
 
