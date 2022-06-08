@@ -1,4 +1,4 @@
-package DTOs;
+package DTOs.APIDTOs;
 
 public class ActionsPOJO {
     private String content;
