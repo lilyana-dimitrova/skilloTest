@@ -1,4 +1,4 @@
-package DTOs;
+package DTOs.APIDTOs;
 
 import com.github.javafaker.Faker;
 

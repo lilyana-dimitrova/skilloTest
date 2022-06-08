@@ -1,7 +1,7 @@
 package APITests.Users;
 
-import DTOs.LoginPOJO;
-import DTOs.SignupPOJO;
+import DTOs.APIDTOs.LoginPOJO;
+import DTOs.APIDTOs.SignupPOJO;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jayway.jsonpath.JsonPath;

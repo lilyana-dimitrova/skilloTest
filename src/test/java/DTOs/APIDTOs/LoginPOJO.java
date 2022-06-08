@@ -1,4 +1,4 @@
-package DTOs;
+package DTOs.APIDTOs;
 
 public class LoginPOJO {
     private String usernameOrEmail;

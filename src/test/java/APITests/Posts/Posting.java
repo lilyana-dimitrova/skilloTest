@@ -1,6 +1,8 @@
 package APITests.Posts;
 
-import DTOs.*;
+import DTOs.APIDTOs.LoginPOJO;
+import DTOs.APIDTOs.PostPOJO;
+import DTOs.APIDTOs.SignupPOJO;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jayway.jsonpath.JsonPath;
@@ -10,8 +12,6 @@ import org.hamcrest.Matchers;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import javax.print.AttributeException;
 
 import static io.restassured.RestAssured.*;
 
